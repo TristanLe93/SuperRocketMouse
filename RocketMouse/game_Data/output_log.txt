@@ -1,0 +1,39 @@
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 6700 Series (ID=0x68ba)
+    Vendor:   ATI
+    VRAM:     1016 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Tristan\Desktop\Unity Projects\RocketMouse\game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Tristan\Desktop\Unity Projects\RocketMouse\game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Tristan\Desktop\Unity Projects\RocketMouse\game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Tristan\Desktop\Unity Projects\RocketMouse\game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Tristan\Desktop\Unity Projects\RocketMouse\game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Tristan\Desktop\Unity Projects\RocketMouse\game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.083 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Tristan\Desktop\Unity Projects\RocketMouse\game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Tristan\Desktop\Unity Projects\RocketMouse\game_Data\Managed\System.dll (this message is harmless)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.626506 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1113.
+Total: 0.503035 ms (FindLiveObjects: 0.100692 ms CreateObjectMapping: 0.069972 ms MarkObjects: 0.325544 ms  DeleteObjects: 0.005973 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.182710 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1113.
+Total: 0.509862 ms (FindLiveObjects: 0.142505 ms CreateObjectMapping: 0.048212 ms MarkObjects: 0.311890 ms  DeleteObjects: 0.005546 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.878499 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1113.
+Total: 0.463356 ms (FindLiveObjects: 0.093865 ms CreateObjectMapping: 0.069119 ms MarkObjects: 0.293544 ms  DeleteObjects: 0.005973 ms)
+

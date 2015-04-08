@@ -81,11 +81,17 @@ public class AdsManager : MonoBehaviour {
 	}
 
 	public void RequestNewBannerAd() {
-		bannerAd.LoadAd(CreateAdRequest());
+		if (Application.internetReachability != NetworkReachability.NotReachable){
+			// has internet connection
+			bannerAd.LoadAd(CreateAdRequest());
+		}
 	}
 
 	public void RequestNewInterstitialAd() {
-		interstitial.LoadAd(CreateAdRequest());
+		if (Application.internetReachability != NetworkReachability.NotReachable){
+			// has internet connection
+			interstitial.LoadAd(CreateAdRequest());
+		}
 	}
 
 	public void ShowBanner() {

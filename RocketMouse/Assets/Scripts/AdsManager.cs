@@ -4,7 +4,6 @@ using GoogleMobileAds.Api;
 
 public class AdsManager : MonoBehaviour {
 	private static AdsManager _instance;
-	private BannerView bannerAd;
 	private InterstitialAd interstitial;
 	private int showInterstitialCounter;
 	
@@ -33,23 +32,8 @@ public class AdsManager : MonoBehaviour {
 
 	
 	void Start () {
-		InitialiseBannerAd();
 		InitialiseInterstitialAd();
-		RequestNewBannerAd();
 		RequestNewInterstitialAd();
-		HideBanner();
-	}
-
-	private void InitialiseBannerAd() {
-		#if UNITY_EDITOR
-			string adUnitId = "unused";
-		#elif UNITY_ANDROID
-			string adUnitId = "ca-app-pub-6804613073213226/3100815197";
-		#else
-			string adUnitId = "unexpected_platform";
-		#endif
-
-		bannerAd = new BannerView(adUnitId, AdSize.Banner, AdPosition.Bottom);
 	}
 
 	private void InitialiseInterstitialAd() {
@@ -80,26 +64,11 @@ public class AdsManager : MonoBehaviour {
 			.Build();
 	}
 
-	public void RequestNewBannerAd() {
-		if (Application.internetReachability != NetworkReachability.NotReachable){
-			// has internet connection
-			bannerAd.LoadAd(CreateAdRequest());
-		}
-	}
-
 	public void RequestNewInterstitialAd() {
 		if (Application.internetReachability != NetworkReachability.NotReachable){
 			// has internet connection
 			interstitial.LoadAd(CreateAdRequest());
 		}
-	}
-
-	public void ShowBanner() {
-		bannerAd.Show();
-	}
-
-	public void HideBanner() {
-		bannerAd.Hide();
 	}
 
 	public void ShowInterstitital() {
@@ -115,7 +84,7 @@ public class AdsManager : MonoBehaviour {
 	}
 	
 	void HandleInterstitial(object sender, EventArgs e) {
-		showInterstitialCounter = UnityEngine.Random.Range(5, 7);
+		showInterstitialCounter = 5;
 		RequestNewInterstitialAd();
 	}
 }

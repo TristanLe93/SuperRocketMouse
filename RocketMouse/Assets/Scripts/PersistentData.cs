@@ -6,7 +6,6 @@ public class PersistentData: MonoBehaviour {
 	private static string HIGHSCORE = "Highscore";
 	private static string MUSIC_VOLUME = "Volume";
 	private static string MUTESOUND = "MuteSounds"; 
-	private static string LOWSYSTEM = "LowSystem";
 
 	private static int highscore = 0;
 	private static float musicVolume = 0.15f;
@@ -39,16 +38,5 @@ public class PersistentData: MonoBehaviour {
 			PlayerPrefs.SetInt(MUTESOUND, TRUE);
 		else 
 			PlayerPrefs.SetInt(MUTESOUND, FALSE);
-	}
-
-	public static bool GetLowSystemSetting() {
-		return PlayerPrefs.GetInt(LOWSYSTEM, FALSE) == TRUE;
-	}
-
-	public static void SetLowSystemSetting(bool lowSystem) {
-		if (lowSystem)
-			PlayerPrefs.SetInt(LOWSYSTEM, TRUE);
-		else 
-			PlayerPrefs.SetInt(LOWSYSTEM, FALSE);
 	}
 }

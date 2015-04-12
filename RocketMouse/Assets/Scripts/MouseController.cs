@@ -45,10 +45,6 @@ public class MouseController : MonoBehaviour {
 	void Start() {
 		animator = GetComponent<Animator>();
 		mouseRigidBody = GetComponent<Rigidbody2D>();
-
-		//hide ad
-		AdsManager.instance.HideBanner();
-		AdsManager.instance.RequestNewBannerAd();
 	}
 
 	void FixedUpdate () {
@@ -72,7 +68,6 @@ public class MouseController : MonoBehaviour {
 		// show the score panel when dead and grounded
 		if (dead && grounded && showScorePanel) {
 			ShowScorePanel();
-			AdsManager.instance.ShowBanner();
 			showScorePanel = false;
 		}
 
